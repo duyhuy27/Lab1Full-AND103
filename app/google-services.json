@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "315760614292",
+    "project_id": "and103---md18309",
+    "storage_bucket": "and103---md18309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315760614292:android:b473f9a0ca4fe82f654d81",
+        "android_client_info": {
+          "package_name": "com.duyle.lab1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJ0shk5f1AnNIAT_aP-7r3ZbXu0x2U8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315760614292:android:d0b93f3ead9340b0654d81",
+        "android_client_info": {
+          "package_name": "com.duyle.lap1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJ0shk5f1AnNIAT_aP-7r3ZbXu0x2U8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315760614292:android:818ed66e0ad3b274654d81",
+        "android_client_info": {
+          "package_name": "com.example.firestorecrud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJ0shk5f1AnNIAT_aP-7r3ZbXu0x2U8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="#FFC107"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/click_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="List City"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCities"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewLoading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        app:lottie_fileName="add.json"
+        app:lottie_loop="true" />
+
+</RelativeLayout>

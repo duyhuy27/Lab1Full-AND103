@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="#FFC107"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/click_back"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New City"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+        <EditText
+            android:id="@+id/editIDCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custtomedit"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="ID Name" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custtomedit"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="City Name" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="match_parent"
+        android:background="@drawable/custtomedit"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="State" />
+
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:background="@drawable/custtomedit"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:hint="Country" />
+
+    <EditText
+        android:id="@+id/editTextPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custtomedit"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Population"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextRegions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custtomedit"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:hint="Regions (comma separated)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Capital State"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCapital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False"
+                android:checked="true" /> <!-- Default value is false -->
+
+        </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custtombutton"
+        android:text="Add City" />
+
+</LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+</LinearLayout>
