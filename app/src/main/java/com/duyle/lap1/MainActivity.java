@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.duyle.lap1.auth.ChoiceLoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 

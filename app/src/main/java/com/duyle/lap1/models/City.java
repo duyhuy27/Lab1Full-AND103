@@ -1,4 +1,4 @@
-package com.duyle.lap1.add;
+package com.duyle.lap1.models;
 
 import java.util.List;
 

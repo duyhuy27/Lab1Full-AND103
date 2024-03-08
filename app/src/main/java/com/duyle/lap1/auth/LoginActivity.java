@@ -1,4 +1,4 @@
-package com.duyle.lap1;
+package com.duyle.lap1.auth;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.duyle.lap1.ui.HomeActivity;
+import com.duyle.lap1.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -70,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(LoginActivity.this, "Đăng Nhập Thành công", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                                     startActivity(intent);
 
                                 } else {

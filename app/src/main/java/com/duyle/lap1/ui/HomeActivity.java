@@ -1,4 +1,4 @@
-package com.duyle.lap1;
+package com.duyle.lap1.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -18,26 +18,19 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.duyle.lap1.add.AddCityActivity;
-import com.duyle.lap1.add.City;
-import com.duyle.lap1.add.CityAdapter;
+import com.duyle.lap1.R;
+import com.duyle.lap1.ui.add.AddCityActivity;
+import com.duyle.lap1.models.City;
+import com.duyle.lap1.adapter.CityAdapter;
 import com.duyle.lap1.databinding.ActivityHomeBinding;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class HomeActivity extends AppCompatActivity implements CityAdapter.iClick {
 

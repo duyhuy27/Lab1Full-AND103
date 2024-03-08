@@ -1,4 +1,4 @@
-package com.duyle.lap1.add;
+package com.duyle.lap1.ui.add;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.duyle.lap1.R;
 import com.duyle.lap1.databinding.ActivityAddCityBinding;
+import com.duyle.lap1.models.City;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
